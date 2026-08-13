@@ -7,15 +7,25 @@ The project covers the complete machine learning workflow — from data cleaning
 ## Technologies Used
 
 Python
+
 NumPy
+
 Pandas
+
 Matplotlib
+
 Seaborn
+
 Scikit-learn
+
 XGBoost
+
 Joblib
+
 Streamlit
+
 Jupyter Notebook
+
 Git & GitHub
 
 ## Live Demo
