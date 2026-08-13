@@ -5,17 +5,18 @@ An end-to-end machine learning project that predicts health insurance claim amou
 The project covers the complete machine learning workflow — from data cleaning and exploratory data analysis to preprocessing, model training, hyperparameter tuning, model comparison, and deployment using Streamlit.
 
 ## Technologies Used
-### Python
-### NumPy
-### Pandas
-### Matplotlib
-### Seaborn
-### Scikit-learn
-### XGBoost
-### Joblib
-### Streamlit
-### Visual Studio Code
-### Git & GitHub
+
+Python
+NumPy
+Pandas
+Matplotlib
+Seaborn
+Scikit-learn
+XGBoost
+Joblib
+Streamlit
+Jupyter Notebook
+Git & GitHub
 
 ## Live Demo
 
@@ -54,6 +55,29 @@ The models evaluated in this project are:
 - XGBoost Regressor
 
 Hyperparameter tuning is performed using `GridSearchCV` for the tree-based models.
+
+---
+
+## Dataset
+
+The dataset contains **1,340 records** and **10 original columns**.
+
+The available features include:
+
+| Feature | Description |
+|---|---|
+| `Id` | Unique identifier for each customer |
+| `age` | Age of the customer |
+| `gender` | Gender of the customer |
+| `bmi` | Body Mass Index |
+| `bloodpressure` | Blood pressure |
+| `diabetic` | Whether the customer is diabetic |
+| `children` | Number of children |
+| `smoker` | Whether the customer is a smoker |
+| `region` | Customer's region |
+| `claim` | Insurance claim amount — target variable |
+
+The dataset initially contained a small number of missing values in `age` and `region`. Since only a small number of records were affected, rows containing missing values were removed, leaving **1,332 records** for modeling.
 
 ---
 
@@ -171,6 +195,16 @@ Measures prediction error while giving greater weight to larger errors.
 Lower is better.
 
 ---
+
+## Model Comparison
+
+The reported test-set results were:
+
+| Model | R² ↑ | MAE ↓ | RMSE ↓ |
+|---|---:|---:|---:|
+| Linear Regression | 0.7318 | 4431.20 | 5737.52 |
+| Random Forest | 0.8028 | 3770.16 | 4919.84 |
+| **XGBoost** | **0.8186** | **3671.95** | **4717.94** |
 
 ### Final Model
 
